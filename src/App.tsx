@@ -1,9 +1,11 @@
 import React from 'react'
+import { RouterComponent } from './routing/routing'
+
 
 function App() {
   return (
     <React.Fragment>
-      <h1>Hello World.</h1>
+      <RouterComponent />
     </React.Fragment>
   )
 }
