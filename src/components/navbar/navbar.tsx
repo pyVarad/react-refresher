@@ -14,6 +14,7 @@ import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 
 import { Link } from 'react-router-dom';
+import { LoginComponent, LogoutComponent } from '../auth/auth0';
 
 const pages = ['Home', 'About', 'Blog'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
@@ -137,6 +138,10 @@ export const ResponsiveAppBar:React.FC = () => {
                 <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
               </IconButton>
             </Tooltip>
+
+            <LoginComponent />
+            <LogoutComponent />
+
             <Menu
               sx={{ mt: '45px' }}
               id="menu-appbar"
