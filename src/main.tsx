@@ -6,8 +6,8 @@ import { ThemeProvider } from '@mui/material/styles';
 import {theme, darkTheme} from './theme.tsx';
 import { Auth0Provider } from '@auth0/auth0-react';
 
-const domain = "";
-const clientId = "";
+const domain = import.meta.env.VITE_APP_AUTH0_DOMAIN;
+const clientId = import.meta.env.VITE_APP_AUTH0_CLIENT_ID;
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
